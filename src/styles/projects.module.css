@@ -1,0 +1,45 @@
+.projects {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-block: 80px;
+    background-color: #408bb3;
+}
+
+.projects h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: #FFF;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.project p {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.project_info {
+    margin-top: 24px;
+}
+
+.project_image {
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+}

@@ -1,0 +1,33 @@
+.about {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-block: 80px;
+    grid-gap: 48px;
+    height: calc(100vh - 160px);
+    background-color: #408bb3;
+}
+
+.about h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 24px;
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+}
+
+.about_content div {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about_content p {
+    color: #FFF;
+    font-size: 24px;
+}
