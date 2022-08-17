@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className='nav-links'>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
-                <Link to="/projects">Justice Friends</Link>
+                <Link to="/teammates">Justice Friends</Link>
             </div>
         </div>
     </nav>
