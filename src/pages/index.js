@@ -42,3 +42,5 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => <title>Superman</title>

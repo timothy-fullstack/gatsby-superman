@@ -51,6 +51,6 @@ query TeammatePage {
     }
   }
 }
-
-
 `
+
+export const Head = () => <title>Superman | Teammates</title>

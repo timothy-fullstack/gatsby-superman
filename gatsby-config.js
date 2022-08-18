@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
@@ -28,7 +28,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Superman',
-    description: 'Web dev portfolio',
-    copyright: 'This website is copyright 2022 Superman'
+    description: 'Static website about Superman and his friends using Gatsby',
+    image: '/logo.png'
   }
 }

@@ -8,22 +8,22 @@ export default function teammateDetails({ data }) {
     const { html } = data.markdownRemark
     const { name, alias, featuredImg } = data.markdownRemark.frontmatter
 
-  return (
-    <Layout>
-        <section className={ styles.teammate_details }>
-            <div className='container'>
-                <div className=''>
-                    <h1>{ name }</h1>
-                    <h3>{ alias }</h3>
-                    <GatsbyImage className={ styles.banner } image={getImage(featuredImg.childImageSharp.gatsbyImageData)} alt="Thumbnail" />
+    return (
+        <Layout>
+            <section className={ styles.teammate_details }>
+                <div className='container'>
+                    <div className=''>
+                        <h1>{ name }</h1>
+                        <h3>{ alias }</h3>
+                        <GatsbyImage className={ styles.banner } image={getImage(featuredImg.childImageSharp.gatsbyImageData)} alt="Thumbnail" />
+                    </div>
+                    <div>
+                        <div className={ styles.body } dangerouslySetInnerHTML={{ __html: html }} />
+                    </div>
                 </div>
-                <div>
-                    <div className={ styles.body } dangerouslySetInnerHTML={{ __html: html }} />
-                </div>
-            </div>
-        </section>
-    </Layout>
-  )
+            </section>
+        </Layout>
+    )
 }
 
 export const query = graphql`
@@ -46,5 +46,5 @@ query TeammateDetails($slug: String) {
   }
   
 `
-
+export const Head = () => <title>Superman | Member</title>
 
