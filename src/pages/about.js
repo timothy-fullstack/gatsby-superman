@@ -13,7 +13,7 @@ export default function About({ data }) {
           <div className='container'>
            
             <div className={styles.about_content}>
-              <GatsbyImage image={ headshot } alt="Superman Image" />
+              <GatsbyImage className={styles.about_image} image={ headshot } alt="Superman Image" />
               <div>
                 <h1>All about Superman</h1>
                 <p>Sent as a baby to Earth from the dying planet Krypton, Kal-El was adopted by Martha and Jonathan Kent of Smallville, Kansas. Growing up as Clark Kent, he devoted his life to helping others with the abilities he developed from Earth's sun. Moving to Metropolis, he became Superman, while still maintaining his secret identity as Clark Kent, who works at the Daily Planet newspaper</p><br/>

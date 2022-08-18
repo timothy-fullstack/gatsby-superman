@@ -9,7 +9,7 @@
 }
 
 .about h1 {
-    font-size: 48px;
+    font-size: 32px;
     text-transform: uppercase;
     color: #FFF;
     margin-bottom: 24px;
@@ -17,18 +17,53 @@
 
 .about_content {
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     height: 100%;
+    gap: 24px;
 }
 
-.about_content div {
-    width: 90%;
+.about_image {
+    width: 70%;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .about_content p {
     color: #FFF;
-    font-size: 24px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+    .about_image {
+        width: 50%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .about_content {
+        grid-template-columns: 30% 1fr;
+    }
+
+    .about_image {
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .about_content {
+        grid-template-columns: 40% 1fr;
+    }
+
+    .about h1 {
+        font-size: 48px;
+    }
+
+    .about_content p {
+        font-size: 24px;
+    }
 }

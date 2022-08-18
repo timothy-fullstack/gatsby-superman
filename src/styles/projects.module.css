@@ -16,8 +16,8 @@
 
 .projects_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
 .project {
@@ -42,4 +42,17 @@
 .project_image {
     aspect-ratio: 1 / 1;
     border-radius: 20px;
+}
+
+@media screen and (min-width: 550px) {
+    .projects_grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .projects_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
