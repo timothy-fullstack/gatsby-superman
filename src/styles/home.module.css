@@ -47,7 +47,7 @@
 }
 
 .background_logo {
-    position: absolute;
+    position: absolute !important;
     min-width: 400px;
     width: 50vw;
     right: -10%;
